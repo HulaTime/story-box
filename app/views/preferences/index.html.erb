@@ -1,0 +1,10 @@
+Please select your prefered news sources
+
+<%= form_tag do %>
+  <%= check_box_tag(:guardian) %>
+  <%= label_tag(:guardian, "The Guardian") %>
+  <%= check_box_tag(:daily_mail) %>
+  <%= label_tag(:daily_mail, "Daily Mail") %>
+  <%= check_box_tag(:financial_times) %>
+  <%= label_tag(:financial_times, "Financial Times") %>
+<% end %>
