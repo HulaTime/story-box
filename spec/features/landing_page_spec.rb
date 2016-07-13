@@ -12,4 +12,10 @@ feature 'Landing Page' do
     expect(current_path).to eq(preferences_path)
   end
 
+  scenario 'user can redirect to a news feed' do
+    visit '/'
+    click_link 'News'
+    expect(current_path).to eq news_path
+  end
+
 end

@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root 'landing_page#index'
 
+  get 'news' => 'news#index'
+
   resources :preferences
 
 end
