@@ -1776,3 +1776,84 @@ Processing by PreferencesController#index as HTML
   Rendered preferences/index.html.erb within layouts/application (1.3ms)
 Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.0ms)
   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/news" for 127.0.0.1 at 2016-07-13 19:07:20 +0100
+Processing by NewsController#index as HTML
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 170ms (Views: 161.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/news" for 127.0.0.1 at 2016-07-13 19:07:20 +0100
+Processing by NewsController#index as HTML
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-07-13 19:07:20 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-07-13 19:07:21 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+Started GET "/preferences" for 127.0.0.1 at 2016-07-13 19:07:21 +0100
+Processing by PreferencesController#index as HTML
+  Rendering preferences/index.html.erb within layouts/application
+  Rendered preferences/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-07-13 19:07:21 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+Started GET "/news" for 127.0.0.1 at 2016-07-13 19:07:21 +0100
+Processing by NewsController#index as HTML
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/preferences" for 127.0.0.1 at 2016-07-13 19:07:21 +0100
+Processing by PreferencesController#index as HTML
+  Rendering preferences/index.html.erb within layouts/application
+  Rendered preferences/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-07-13 19:07:21 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-07-13 19:07:21 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-07-13 19:07:21 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-07-13 19:07:21 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m

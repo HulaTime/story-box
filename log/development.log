@@ -279,3 +279,29 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+Started GET "/" for ::1 at 2016-07-13 19:03:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 412ms (Views: 401.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-13 19:03:24 +0100
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-13 19:03:24 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 19:03:24 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 19:03:24 +0100
+Started GET "/preferences" for ::1 at 2016-07-13 19:03:32 +0100
+Processing by PreferencesController#index as HTML
+  Rendering preferences/index.html.erb within layouts/application
+  Rendered preferences/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/news" for ::1 at 2016-07-13 19:03:35 +0100
+Processing by NewsController#index as HTML
+  Rendering news/index.html.erb within layouts/application
+  Rendered news/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 44ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
