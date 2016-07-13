@@ -1,4 +1,5 @@
 require 'coveralls'
+require 'features/helpers/web_helpers'
 
 Coveralls.wear!
 

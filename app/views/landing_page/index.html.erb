@@ -1,4 +1,7 @@
 <h1>Story Box</h1>
 
-<%= link_to "Preferences", preferences_path %>
+<% if user_signed_in? %>
+  <%= link_to "Preferences", preferences_path %>
+<% end %>
+
 <%= link_to "News", news_path %>
