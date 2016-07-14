@@ -6,3 +6,10 @@ def sign_user_up(email: 'test@example.com')
   fill_in('Password confirmation', with: 'testtest')
   click_button('Sign up')
 end
+
+def make_note
+  click_link 'Make a note'
+  fill_in('Title', with: 'A note')
+  fill_in('Note', with: 'Important notes')
+  click_button 'Create Note'
+end

@@ -1,0 +1,9 @@
+<% if @notes.any? %>
+  <% @notes.each do |note| %>
+    <%= note.title %>
+  <% end %>
+<% else %>
+  <div id='no_notes_message'>
+    No notes added
+  </div>
+<% end %>
