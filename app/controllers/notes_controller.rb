@@ -9,13 +9,11 @@ class NotesController < ApplicationController
 
   def create
     note = current_user.notes.create(note_params)
-    if note.save
-      redirect_to '/notes'
-    else
-      if note.errors
-        render :new
-      end
-    end
+    redirect_to '/notes' if note.save
+  end
+
+  def show
+    @note = Note.find(params[:id])
   end
 
   private

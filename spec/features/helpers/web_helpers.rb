@@ -7,9 +7,10 @@ def sign_user_up(email: 'test@example.com')
   click_button('Sign up')
 end
 
-def make_note
+def make_note(title: 'A note', note: 'Important notes')
+  visit '/'
   click_link 'Make a note'
-  fill_in('Title', with: 'A note')
-  fill_in('Note', with: 'Important notes')
+  fill_in('Title', with: title)
+  fill_in('Note', with: note)
   click_button 'Create Note'
 end

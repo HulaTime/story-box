@@ -11,6 +11,8 @@
   <body>
     <% if user_signed_in? %>
 
+      <%= link_to 'Make a note', new_note_path %>
+
       <%= link_to "Preferences", preferences_path %>
 
       <%= link_to "Sign out", destroy_user_session_path, method: :delete %>

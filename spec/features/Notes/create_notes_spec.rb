@@ -1,13 +1,12 @@
-feature 'Create Note' do
+feature 'Create Notes' do
 
   context 'notes have been added' do
     before do
       sign_user_up
-      visit '/notes'
       make_note
     end
 
-    scenario 'display notes' do
+    scenario 'display notes titles' do
       visit '/notes'
       expect(page).to have_content('A note')
       expect(page).not_to have_content('No notes')

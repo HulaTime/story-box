@@ -1,8 +1,6 @@
-<%= link_to 'Make a note', new_note_path %>
-
 <% if @notes.any? %>
   <% @notes.each do |note| %>
-    <%= note.title %>
+    <%= link_to "#{note.title}", note_path(note) %>
   <% end %>
 <% else %>
   <div id='no_notes_message'>
