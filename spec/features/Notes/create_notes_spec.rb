@@ -23,7 +23,6 @@ feature 'Create Note' do
   scenario 'user can create a note when signed in' do
     sign_user_up
     visit '/notes'
-    click_link 'Make a note'
     make_note
     expect(current_path).to eq '/notes'
     expect(page).to have_content 'A note'

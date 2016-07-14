@@ -1,3 +1,5 @@
+<%= link_to 'Make a note', new_note_path %>
+
 <% if @notes.any? %>
   <% @notes.each do |note| %>
     <%= note.title %>
