@@ -11,6 +11,7 @@ This project is targeted at Journalists and Media Outlets. It's purpose is to cr
  * Ruby on Rails with a Postgres database and Rspec & Capybara testing framework
  * Travis CI and Coveralls
  * Figaro gem for hiding secrets
+ * Shoulda-matchers gem for testing associations with Rspec
 
 To see a full list of existing and planned features, navigate to the user_stories.md file in the root of this directory.
 

@@ -2,7 +2,7 @@ feature 'Create Note' do
 
   context 'notes have been added' do
     before do
-      Note.create(title: 'Note1')
+      Note.create(title: 'Note1', note: 'a note')
     end
 
     scenario 'display notes' do
