@@ -8,8 +8,14 @@ class NotesController < ApplicationController
   end
 
   def create
-    Note.create(note_params)
-    redirect_to '/notes'
+    note = current_user.notes.create(note_params)
+    if note.save
+      redirect_to '/notes'
+    else
+      if note.errors
+        render :new
+      end
+    end
   end
 
   private
