@@ -1,9 +1,24 @@
 require 'coveralls'
+require 'webmock/rspec'
 require 'features/helpers/web_helpers'
 
 Coveralls.wear!
 
+WebMock.disable_net_connect!(allow_localhost: true)
+
 RSpec.configure do |config|
+
+  #stubs response from external requests in testing
+  config.before(:each) do
+    stub_request(:get, /api.github.com/).
+      with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
+      to_return(status: 200, body: "stubbed response", headers: {})
+  end
+
+    config.before(:each) do
+    stub_request(:get, "https://content.guardianapis.com/").
+          to_return(:status => 200, :body => "latest news updates", :headers => {})
+  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

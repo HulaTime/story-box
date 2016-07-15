@@ -8,7 +8,7 @@ def sign_user_up(email: 'test@example.com')
 end
 
 def make_note(title: 'A note', note: 'Important notes')
-  visit '/'
+  visit '/notes'
   click_link 'Make a note'
   fill_in('Title', with: title)
   fill_in('Note', with: note)
