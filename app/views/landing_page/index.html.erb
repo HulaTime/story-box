@@ -3,4 +3,7 @@
 <%= link_to "News", news_path %>
 
 <h3 id='news-outlet-title'>Guardian</h3>
-<%= @guardian_latest %>
+
+<% @guardian_latest.each do |thing| %>
+  <%= thing %>
+<% end %>

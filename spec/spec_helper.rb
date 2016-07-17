@@ -16,7 +16,7 @@ RSpec.configure do |config|
   end
 
     config.before(:each) do
-    stub_request(:get, "https://content.guardianapis.com/").
+    stub_request(:get, "https://content.guardianapis.com/search?api-key=#{ENV['GUARDIAN_KEY']}").
           to_return(:status => 200, :body => "latest news updates", :headers => {})
   end
   # rspec-expectations config goes here. You can use an alternate

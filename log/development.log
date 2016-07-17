@@ -748,3 +748,393 @@ Processing by LandingPageController#index as HTML
 Completed 200 OK in 409ms (Views: 249.8ms | ActiveRecord: 7.8ms)
 
 
+Started GET "/" for ::1 at 2016-07-15 17:00:00 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+SyntaxError (/Users/Luiz/Max/hobby_stuff/story-box/app/controllers/landing_page_controller.rb:4: dynamic constant assignment
+...anapis.com/search?api-key"+ENV=GUARDIAN_KEY)
+...                               ^):
+  
+app/controllers/landing_page_controller.rb:4: dynamic constant assignment
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.3ms)
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.2ms)
+Started GET "/" for ::1 at 2016-07-15 17:01:50 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 831ms (Views: 280.1ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-15 17:01:51 +0100
+Started GET "/" for ::1 at 2016-07-15 17:01:59 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 132ms (Views: 23.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-15 17:01:59 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:02:00 +0100
+Started GET "/" for ::1 at 2016-07-15 17:02:54 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 1320ms (Views: 277.1ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-15 17:02:56 +0100
+Started GET "/" for ::1 at 2016-07-15 17:03:28 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 606ms (Views: 23.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-15 17:03:29 +0100
+Started GET "/" for ::1 at 2016-07-17 14:30:53 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (5.3ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 3137ms (Views: 313.3ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-17 14:34:17 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 993ms (Views: 24.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-17 14:34:18 +0100
+Started GET "/" for ::1 at 2016-07-17 14:34:30 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 511ms (Views: 25.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:31 +0100
+Started GET "/" for ::1 at 2016-07-17 14:34:42 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (5.3ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 802ms (Views: 288.0ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-17 14:34:43 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-17 14:34:44 +0100
+Started GET "/" for ::1 at 2016-07-17 14:34:59 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 519ms (Views: 26.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-17 14:35:00 +0100
+Started GET "/" for ::1 at 2016-07-17 14:35:21 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 1250ms (Views: 296.7ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-17 14:35:23 +0100
+Started GET "/" for ::1 at 2016-07-17 14:35:44 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 554ms (Views: 26.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:44 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-17 14:35:45 +0100
+Started GET "/" for ::1 at 2016-07-17 14:35:47 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 566ms (Views: 26.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:35:47 +0100
+Started GET "/notes" for ::1 at 2016-07-17 14:37:12 +0100
+Processing by NotesController#index as HTML
+  Rendering notes/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "notes"[0m
+  Rendered notes/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 33ms (Views: 25.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-17 14:40:30 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 940ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `webTitle' for #<Array:0x007f8ba7100308>):
+    5: <h3 id='news-outlet-title'>Guardian</h3>
+    6: 
+    7: <% @guardian_latest.each do |thing| %>
+    8:   <%= thing.webTitle %>
+    9: <% end %>
+  
+app/views/landing_page/index.html.erb:8:in `block in _app_views_landing_page_index_html_erb___2335453252696412787_70118890132980'
+app/views/landing_page/index.html.erb:7:in `_app_views_landing_page_index_html_erb___2335453252696412787_70118890132980'
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.2ms)
+Started GET "/" for ::1 at 2016-07-17 14:41:00 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 643ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `webTitle' for #<Array:0x007f8ba279c838>):
+    5: <h3 id='news-outlet-title'>Guardian</h3>
+    6: 
+    7: <% @guardian_latest.each do |thing| %>
+    8:   <%= thing.webTitle %>
+    9: <% end %>
+  
+app/views/landing_page/index.html.erb:8:in `block in _app_views_landing_page_index_html_erb___2335453252696412787_70118871902120'
+app/views/landing_page/index.html.erb:7:in `_app_views_landing_page_index_html_erb___2335453252696412787_70118871902120'
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.8ms)
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.4ms)
+Started GET "/" for ::1 at 2016-07-17 14:41:12 +0100
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 895ms (Views: 23.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/landing_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/news.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/preferences.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/notes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/action_cable.self-1641ec3e8ea24ed63601e86efcca7f9266e09f390e82199d56aa7e4bd50e1aa9.js?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/landing_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/news.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/notes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/preferences.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-17 14:41:13 +0100
+Started GET "/" for ::1 at 2016-07-17 14:44:52 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LandingPageController#index as HTML
+  Rendering landing_page/index.html.erb within layouts/application
+  Rendered landing_page/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 877ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `response' for #<Array:0x007fc4c3dd5fd8>
+Did you mean?  respond_to?):
+    5: <h3 id='news-outlet-title'>Guardian</h3>
+    6: 
+    7: <% @guardian_latest.each do |thing| %>
+    8:   <%= thing.response %>
+    9: <% end %>
+  
+app/views/landing_page/index.html.erb:8:in `block in _app_views_landing_page_index_html_erb__366008671389076797_70241538865640'
+app/views/landing_page/index.html.erb:7:in `_app_views_landing_page_index_html_erb__366008671389076797_70241538865640'
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Luiz/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.8ms)
