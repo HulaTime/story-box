@@ -29,6 +29,12 @@ feature 'Homepage' do
     scenario 'should have a sign out option' do
       expect(page).to have_link('Sign out')
     end
+
+    scenario 'should have a link to users articles' do
+      expect(page).to have_link('My Articles')
+      click_link('Articles')
+      expect(current_path).to eq articles_path
+    end
   end
 
   scenario 'should divert to landing page if user not signed in' do

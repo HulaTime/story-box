@@ -15,3 +15,6 @@ def make_note(title: 'A note', note: 'Important notes')
   fill_in('Note', with: note)
   click_button 'Create Note'
 end
+
+def make_article(title: 'An Article', body: 'Events')
+end
