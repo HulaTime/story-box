@@ -1,7 +1,11 @@
 class NotesController < ApplicationController
 
   def index
-    @notes = Note.all
+    if current_user
+      @notes = current_user.notes
+    else
+      redirect_to root_path
+    end
   end
 
   def new

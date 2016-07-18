@@ -20,6 +20,7 @@ feature 'Create Notes' do
 
   context 'notes have not been added' do
     scenario 'informative message displayed' do
+      sign_user_up
       visit '/notes'
       expect(page).to have_content('No notes added')
       expect(page).not_to have_content('Note1')

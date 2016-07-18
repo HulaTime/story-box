@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'news' => 'news#index'
 
+  get 'home' => 'home#index'
+
   resources :preferences
 
   resources :notes
