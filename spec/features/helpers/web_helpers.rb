@@ -1,6 +1,7 @@
-def sign_user_up(email: 'test@example.com')
+def sign_user_up(email: 'test@example.com', username:'Bono')
   visit('/')
   click_link('Sign up')
+  fill_in('Username', with: username)
   fill_in('Email', with: email)
   fill_in('Password', with: 'testtest')
   fill_in('Password confirmation', with: 'testtest')
