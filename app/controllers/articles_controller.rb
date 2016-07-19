@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
 
   def index
+    redirect_to root_path if current_user == nil
   end
 
   def new
@@ -8,7 +9,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    Article.create(article_params)
+    @article = current_user.articles.create(article_params)
   end
 
   private
