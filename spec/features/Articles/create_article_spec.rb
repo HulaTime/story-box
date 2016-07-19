@@ -7,7 +7,10 @@ feature 'Create Articles' do
 
   scenario 'User can create an article' do
     click_link 'Create Article'
-    fill_in 'create a table here'
+    fill_in('Save as:', with: 'An Article')
+    fill_in('Article', with: 'important stuffs')
+    click_button('Save')
+    expect(Article.count).to eq 1
   end
 
 end
