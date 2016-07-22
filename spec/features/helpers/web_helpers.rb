@@ -17,4 +17,9 @@ def make_note(title: 'A note', note: 'Important notes')
 end
 
 def make_article(title: 'An Article', body: 'Events')
+  visit '/articles'
+  click_link 'Create Article'
+  fill_in('Save as:', with: title)
+  fill_in('Article', with: body)
+  click_button 'Save'
 end
