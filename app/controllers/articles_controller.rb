@@ -1,7 +1,11 @@
 class ArticlesController < ApplicationController
 
   def index
-    redirect_to root_path if current_user == nil
+    if current_user
+      @articles = current_user.articles
+    else
+      redirect_to root_path
+    end
   end
 
   def new
