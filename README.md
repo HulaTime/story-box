@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/MaxProvin/story-box.svg?branch=master)](https://travis-ci.org/MaxProvin/story-box)
 [![Coverage Status](https://coveralls.io/repos/github/MaxProvin/story-box/badge.svg?branch=master)](https://coveralls.io/github/MaxProvin/story-box?branch=master)
 
+
 # README
 
 ### Overview
