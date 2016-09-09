@@ -1,4 +1,4 @@
-feature 'Create Articles' do
+xfeature 'Create Articles' do
 
   before do
     sign_user_up

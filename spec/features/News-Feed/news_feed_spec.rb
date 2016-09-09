@@ -1,4 +1,4 @@
-feature 'News Feed' do
+xfeature 'News Feed' do
 
   context 'Landing Page' do
     scenario 'makes a call to the Guardian API' do

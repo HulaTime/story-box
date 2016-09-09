@@ -1,4 +1,4 @@
-feature 'Viewing Articles' do
+xfeature 'Viewing Articles' do
 
   context 'No Articles added' do
     scenario 'informative message displayed' do

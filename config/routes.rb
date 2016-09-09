@@ -4,7 +4,6 @@ Rails.application.routes.draw do
 
   root 'landing_page#index'
   get 'news' => 'news#index'
-  get 'home' => 'home#index'
 
   resources :preferences
   resources :notes
