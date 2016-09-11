@@ -1,11 +1,1 @@
-<h2 div='username-headline'> <%= @username %> </h2>
-
-<h4 div='news-page-title'> <%= link_to 'Latest Updates' %> </h4>
-
-<h4> <%= link_to 'My Articles', articles_path %> </h4>
-
-<h4> <%= link_to 'My Notes', notes_path %> </h4>
-
-<h5 div='preferences-title'> <%= link_to 'Preferences', preferences_path %> </h5>
-
-<%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+<%= current_user.username %> 

@@ -1,6 +1,6 @@
 require 'coveralls'
 require 'webmock/rspec'
-require 'features/helpers/web_helpers'
+require 'features/web_helpers'
 
 Coveralls.wear!
 

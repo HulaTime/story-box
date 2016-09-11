@@ -10,9 +10,9 @@ feature 'NavBar' do
 			expect(page).to have_link 'Sign in'
 		end
 
-		scenario 'home button redirects to news path' do
+		scenario 'home button redirects to landing page' do
 			click_link 'Home'
-			expect(current_path).to eq news_path
+			expect(current_path).to eq root_path
 		end
 	end
 
@@ -32,7 +32,7 @@ feature 'NavBar' do
 
 		scenario 'home button redirects to user homepage' do
 			click_link 'Home'
-			expect(current_path).to eq '/'
+			expect(current_path).to eq home_path
 			expect(page).to have_content 'Bono'
 		end
 
