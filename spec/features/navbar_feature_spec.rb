@@ -1,5 +1,11 @@
 feature 'NavBar' do
-	
+
+	scenario 'should have an About us link' do
+		visit '/'
+		click_link 'About us'
+		expect(current_path).to eq about_path
+	end
+
 	context 'User not signed in' do
 		before do
 			visit '/'
