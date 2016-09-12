@@ -7,15 +7,15 @@
 # Ignore bundler config.
 /.bundle
 
-
 # Ignore Byebug command history file.
 .byebug_history
 
 .DS_Store
 coverage
-tmp
-log
 
 # Ignore application configuration
 /config/application.yml
 .env
+
+tmp/*
+log/*
