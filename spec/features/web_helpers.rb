@@ -16,10 +16,10 @@ def make_note(title: 'A note', note: 'Important notes')
   click_button 'Create Note'
 end
 
-def make_article(title: 'An Article', body: 'Events')
+def make_article(title: 'An Article', body: 'Some useful info')
   visit '/articles'
-  click_link 'Create Article'
-  fill_in('Save as:', with: title)
-  fill_in('Article', with: body)
+  click_link 'New Article'
+  fill_in('article_title', with: title)
+  fill_in('article_body', with: body)
   click_button 'Save'
 end
