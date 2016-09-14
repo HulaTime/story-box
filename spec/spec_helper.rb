@@ -1,12 +1,15 @@
 require 'coveralls'
 require 'webmock/rspec'
 require 'features/web_helpers'
+require 'factory_girl_rails'
 
 Coveralls.wear!
 
 WebMock.disable_net_connect!(allow_localhost: true)
 
 RSpec.configure do |config|
+
+  config.include FactoryGirl::Syntax::Methods
 
   #stubs response from external requests in testing
   config.before(:each) do
