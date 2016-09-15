@@ -16,7 +16,7 @@ def make_note(title: 'A note', note: 'Important notes')
   click_button 'Create Note'
 end
 
-def make_article(title: 'An Article', body: 'Some useful info')
+def make_article(title: 'An Article', body: "Some useful info\n\nend")
   visit '/articles'
   click_link 'New Article'
   fill_in('article_title', with: title)

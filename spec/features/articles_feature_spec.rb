@@ -7,13 +7,21 @@ feature 'Articles' do
 			visit articles_path
 		end
 
-		scenario 'should be displayed on index page' do
+		scenario 'index should display first 3 lines of article body' do
 			expect(page).to have_content 'An Article Some useful info'
 		end
 
 		scenario 'can be created via a link' do
 			make_article(title: 'No. 2')
 			expect(page).to have_content 'No. 2 Some useful info'
+		end
+
+		scenario 'can be viewed individually' do
+			user = User.find_by(email: 'test@example.com')
+			article = user.articles.first
+			click_link 'An Article'
+			expect(current_path).to eq "/articles/#{article.id}"
+			expect(page).to have_content "An Article Some useful info\n\n\n\nend"
 		end
 	end
 
