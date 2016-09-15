@@ -50,6 +50,7 @@ end
 
 group :test do
   gem 'rspec-rails'
+  gem 'rspec-collection_matchers'
   gem 'capybara'
   gem 'coveralls', require: false
   gem 'shoulda-matchers'

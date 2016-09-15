@@ -1,5 +1,6 @@
 require 'coveralls'
 require 'webmock/rspec'
+require 'rspec/collection_matchers'
 require 'features/web_helpers'
 require 'factory_girl_rails'
 
