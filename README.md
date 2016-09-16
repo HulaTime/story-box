@@ -10,6 +10,7 @@ This project is targeted at Journalists and Media Outlets. It's purpose is to cr
 
 ### Technologies used
  * Ruby on Rails with a Postgres database and Rspec & Capybara testing framework
+ * tinyMCE text-editor
  * Travis CI and Coveralls
  * Figaro gem for hiding secrets
  * Shoulda-matchers gem for testing associations with Rspec
