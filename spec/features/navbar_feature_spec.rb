@@ -1,22 +1,25 @@
 feature 'NavBar' do
 
-	scenario 'should have an About us link' do
+	before do
 		visit root_path
+	end
+
+	scenario 'should have a Notes link' do
+		click_link 'Notes'
+		expect(current_path).to eq notes_path
+	end
+
+	scenario 'should have an About us link' do
 		click_link 'About us'
 		expect(current_path).to eq about_path
 	end
 
 	scenario 'should have a link to articles' do
-		visit root_path
 		click_link 'Articles'
 		expect(current_path).to eq articles_path
 	end
 
-	context 'User not signed in' do
-		before do
-			visit root_path
-		end
-		
+	context 'User not signed in' do		
 		scenario 'should have links to sign up and in' do
 			expect(page).to have_link 'Sign up'
 			expect(page).to have_link 'Sign in'
