@@ -1,0 +1,5 @@
+<%= form_for @note do |f| %>
+	<%= f.label 'Note' %>
+	<%= f.text_area :body, class: 'sticky-notes' %>
+	<%= f.submit %>
+<% end %>
