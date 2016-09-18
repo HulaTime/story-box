@@ -2,9 +2,6 @@ class NotesController < ApplicationController
 
 	def index
 		@notes = Note.all
-	end
-
-	def new
 		@note = Note.new
 	end
 
@@ -20,3 +17,7 @@ class NotesController < ApplicationController
 	end
 
 end
+		# note_info = JSON.parse([params[:note]])
+		# p note_info
+		# new_note = Note.new(body: note_info)
+		# new_note.save

@@ -15,15 +15,15 @@ feature 'Notes' do
 			make_note(body: 'No. 2')
 			expect(page).to have_content 'No. 2'
 		end
-	end
 
-	context 'when user not signed in' do
-		scenario 'cannot be created' do
-			expect(page).not_to have_link 'New Note'
+		xcontext 'Data Binding' do
+			scenario 'editing notes updates page and database' do
+				expect(page).to have_content 'Important notes'
+				make_note(body: 'ploppers')
+				expect(current_path).to eq notes_path
+				expect(page).to have_content 'ploppers'
+			end
 		end
-	end
-
-	context 'Data Binding' do
 	end
 
 end

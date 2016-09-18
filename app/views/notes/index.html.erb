@@ -1,9 +1,15 @@
 <div class='sticky-notes'>
+	
+	<%= form_for @note, url: {action: "create"} do |f| %>
+		<%= f.text_area :body, class: 'sticky-notes' %>
+		<%= f.submit html: {id:'new-note'} %>
+	<% end %>
+
 	<% @notes.each do |note| %>
-		<textarea>
+		<% note_num = 1 %>
+		<textarea id="note-#{note_num}">
 			<%= note.body %>
 		</textarea>
+		<% note_num += 1 %>
 	<% end %>
 </div>
-
-<%= link_to 'New Note', new_note_path %>

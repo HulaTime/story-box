@@ -10,7 +10,6 @@ end
 
 def make_note(body: 'Important notes')
   visit '/notes'
-  click_link 'New Note'
   fill_in('note_body', with: body)
   click_button 'Create Note'
 end
@@ -21,4 +20,9 @@ def make_article(title: 'An Article', body: "Some useful info\n\nend")
   fill_in('article_title', with: title)
   fill_in('article_body', with: body)
   click_button 'Save'
+end
+
+def make_a_note(body: 'Important notes')
+  visit '/notes'
+  fill_in('note-0', with: body)
 end
