@@ -26,8 +26,19 @@ feature 'Articles' do
 	end
 
 	context 'when user not signed in' do
-		scenario 'cannot be created' do
+		before do
+			sign_user_up
+			make_article
+			click_link 'Sign out'
+			visit articles_path
+		end
+
+		scenario 'cannot be created' do			
 			expect(page).not_to have_link 'New Article'
+		end
+
+		scenario 'can view existing articles' do
+			expect(page).to have_content 'An Article Some useful info'
 		end
 	end
 end

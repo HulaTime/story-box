@@ -2,71 +2,38 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/**{
-  margin:0;
-  padding:0;
-}
-body{
-  font-family:arial,sans-serif;
-  font-size:100%;
-  margin:3em;
-  background:#666;
-  color:#fff;
-}*/
-
-.sticky-notes {
-
-}
-
-.sticky-notes ul, li{
-  list-style:none;
-}
-
-.sticky-notes ul{
+/*Font, background and border */
+.sticky-notes textarea {
   overflow:hidden;
-  padding:3em;
-}
-
-.sticky-notes ul li p{
-	word-wrap: break-word;
-	overflow: auto;
-  text-decoration:none;
-  color:#000;
-  background:#ffc;
-  display:block;
-  height:7em;
-  width:7em;
-  padding:1em;
-  /* Firefox */
-  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
-  -moz-transition:-moz-transform .15s linear;
-  /* Safari+Chrome */
-  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  -webkit-transition:-webkit-transform .15s linear;
-  /* Opera */
+  border:0;
+  border-radius:3px;
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-  -o-transition:-o-transform .15s linear;
+  background: -webkit-linear-gradient(#F9EFAF, #F7E98D);
+  background: -moz-linear-gradient(#F9EFAF, #F7E98D);
+  background: -o-linear-gradient(#F9EFAF, #F7E98D);
+  background: -ms-linear-gradient(#F9EFAF, #F7E98D);
+  background: linear-gradient(#F9EFAF, #F7E98D);
+  font:20px 'Reenie Beanie', cursive;
 }
 
-.sticky-notes ul li{
+/*Position and size */
+.sticky-notes textarea {
+  display: block;
+  padding: 1em;
+  width:15%;
+  height:250px;
   margin:1em;
   float:left;
 }
 
-.sticky-notes ul li p{
-  font-family: 'Reenie Beanie', cursive;
-  font-size:180%;
-}
-
-/* Tilting notes */
-.sticky-notes ul li p{
+/* Random tilting and colour on notes*/
+.sticky-notes textarea {
   -webkit-transform:rotate(-6deg);
   -o-transform:rotate(-6deg);
   -moz-transform:rotate(-6deg);
 }
 
-/* Random tilting and colour on notes*/
-.sticky-notes ul li:nth-child(even) p {
+.sticky-notes textarea:nth-child(even) {
   -o-transform:rotate(4deg);
   -webkit-transform:rotate(4deg);
   -moz-transform:rotate(4deg);
@@ -75,7 +42,7 @@ body{
   background:#cfc;
 }
 
-.sticky-notes ul li:nth-child(3n) p {
+.sticky-notes textarea:nth-child(3n) {
   -o-transform:rotate(-3deg);
   -webkit-transform:rotate(-3deg);
   -moz-transform:rotate(-3deg);
@@ -84,7 +51,7 @@ body{
   background:#ccf;
 }
 
-.sticky-notes ul li:nth-child(5n) p {
+.sticky-notes textarea:nth-child(5n) {
   -o-transform:rotate(5deg);
   -webkit-transform:rotate(5deg);
   -moz-transform:rotate(5deg);
@@ -92,9 +59,8 @@ body{
   top:-10px;
 }
 
-
-/* Zoom on Focus */
-.sticky-notes ul li p:hover,ul li p:focus {
+/*Zoom on Focus*/
+.sticky-notes textarea:hover,textarea:focus {
   -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
   -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
   box-shadow:10px 10px 7px rgba(0,0,0,.7);
@@ -103,4 +69,10 @@ body{
   -o-transform: scale(1.25);
   position:relative;
   z-index:5;
+}
+
+.sticky-notes textarea {
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
 }

@@ -23,4 +23,7 @@ feature 'Notes' do
 		end
 	end
 
+	context 'Data Binding' do
+	end
+
 end

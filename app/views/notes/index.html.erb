@@ -1,15 +1,9 @@
 <div class='sticky-notes'>
-	<ul>
-		<% @notes.each do |note| %>
-			<!-- <% note_num = 1 %> -->
-			<li>
-				<p>
-					<%= note.body %>
-				</>
-			</li>
-			<!-- <% note_num += 1 %> -->
-		<% end %>
-	</ul>
+	<% @notes.each do |note| %>
+		<textarea>
+			<%= note.body %>
+		</textarea>
+	<% end %>
 </div>
 
 <%= link_to 'New Note', new_note_path %>
