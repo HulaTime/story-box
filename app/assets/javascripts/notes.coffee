@@ -23,4 +23,4 @@
   $("#note-0").keyup(function(){
   	sendNote(postRequest);
   });
-});`
+}); `
