@@ -1,20 +1,25 @@
 $(document).ready(function(){
 
+	var id;
+	var noteContent;
+
 	function postRequest(noteContent) {
+		id = document.activeElement.id
   	$.ajax({
 	    type: "POST",
-	    url: "/notes/11",
+	    url: "/notes/"+id,
 	    dataType: "text",
 	    data: { _method:"put", note: noteContent }
 	  })
 	}
 
 	function sendNote(callback) {
-		var noteContent = $("#11").text();
-		callback(noteContent);
+		id = "#" + document.activeElement.id
+		noteContent = $(id).text();
+		callback(noteContent)
 	}
 
-  $("#11").keyup(function(){
-  	sendNote(postRequest);
+  $(".notes").keyup(function(){
+		sendNote(postRequest);
   });
 });
