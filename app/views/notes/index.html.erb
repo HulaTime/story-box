@@ -6,10 +6,18 @@
 	<% end %>
 
 	<% @notes.each do |note| %>
+
 		<% note_num = 1 %>
-		<textarea id="note-#{note_num}">
+
+		<div contenteditable="true" id="note-#{note_num}">
+			
+			<%= link_to image_tag('red-x.png'), note_path(note), class: 'delete-note', method: :delete %>
+			
 			<%= note.body %>
-		</textarea>
+
+		</div>
+
 		<% note_num += 1 %>
+
 	<% end %>
 </div>

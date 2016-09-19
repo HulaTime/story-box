@@ -8,8 +8,22 @@
   left: 50px;
 }
 
+.sticky-notes img {
+  display: block;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  float: right;
+  top: -25px;
+  left: 25px;
+}
+
+.sticky-notes img:hover {
+  cursor: pointer;
+}
+
 /*Font, background and border */
-.sticky-notes textarea {
+.sticky-notes div, textarea {
   overflow:hidden;
   border:0;
   border-radius:3px;
@@ -24,23 +38,23 @@
 }
 
 /*Position and size */
-.sticky-notes textarea {
+.sticky-notes div, textarea {
   display: block;
   padding: 1em;
-  max-width:15%;
+  max-width:12%;
   height:250px;
   margin:1em;
   float:left;
 }
 
 /* Random tilting and colour on notes*/
-.sticky-notes textarea {
+.sticky-notes div, textarea {
   -webkit-transform:rotate(-6deg);
   -o-transform:rotate(-6deg);
   -moz-transform:rotate(-6deg);
 }
 
-.sticky-notes textarea:nth-child(even) {
+.sticky-notes div:nth-child(even) {
   -o-transform:rotate(4deg);
   -webkit-transform:rotate(4deg);
   -moz-transform:rotate(4deg);
@@ -49,7 +63,7 @@
   background:#cfc;
 }
 
-.sticky-notes textarea:nth-child(3n) {
+.sticky-notes div:nth-child(3n) {
   -o-transform:rotate(-3deg);
   -webkit-transform:rotate(-3deg);
   -moz-transform:rotate(-3deg);
@@ -58,7 +72,7 @@
   background:#ccf;
 }
 
-.sticky-notes textarea:nth-child(5n) {
+.sticky-notes div:nth-child(5n) {
   -o-transform:rotate(5deg);
   -webkit-transform:rotate(5deg);
   -moz-transform:rotate(5deg);
@@ -67,7 +81,7 @@
 }
 
 /*Zoom on Focus*/
-.sticky-notes textarea:hover,textarea:focus {
+.sticky-notes div:hover,div:focus, textarea:hover,textarea:focus {
   -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
   -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
   box-shadow:10px 10px 7px rgba(0,0,0,.7);
@@ -78,7 +92,7 @@
   z-index:5;
 }
 
-.sticky-notes textarea {
+.sticky-notes div, textarea {
   -moz-transition:-moz-transform .15s linear;
   -o-transition:-o-transform .15s linear;
   -webkit-transition:-webkit-transform .15s linear;

@@ -11,15 +11,20 @@ feature 'Notes' do
 			expect(page).to have_content 'Important notes'
 		end
 
-		scenario 'can be created via a link' do
+		scenario 'can be created on same page' do
 			make_note(body: 'No. 2')
 			expect(page).to have_content 'No. 2'
+		end
+
+		scenario 'can be deleted' do
+			page.first(".delete-note").click
+			expect(page).not_to have_content ' Important notes'
 		end
 
 		xcontext 'Data Binding' do
 			scenario 'editing notes updates page and database' do
 				expect(page).to have_content 'Important notes'
-				make_note(body: 'ploppers')
+				edit_note(body: 'ploppers')
 				expect(current_path).to eq notes_path
 				expect(page).to have_content 'ploppers'
 			end
