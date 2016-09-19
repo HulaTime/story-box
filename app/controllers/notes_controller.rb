@@ -6,7 +6,7 @@ class NotesController < ApplicationController
 	end
 
 	def create
-		Note.create(note_params)
+		Note.create(create_note_params)
 		redirect_to notes_path
 	end
 
@@ -16,10 +16,19 @@ class NotesController < ApplicationController
 		redirect_to notes_path
 	end
 
+	def update
+		note = Note.find(edit_note_params[:id])
+		note.update(body: edit_note_params[:note])
+	end
+
 	private
 
-	def note_params
+	def create_note_params
 		params.require(:note).permit(:body)
+	end
+
+	def edit_note_params
+		params.permit(:note, :id)
 	end
 
 end

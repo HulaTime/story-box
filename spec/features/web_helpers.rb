@@ -22,7 +22,8 @@ def make_article(title: 'An Article', body: "Some useful info\n\nend")
   click_button 'Save'
 end
 
-def make_a_note(body: 'Important notes')
+def edit_note(body: 'This is edited')
   visit '/notes'
-  fill_in('note-0', with: body)
+  text_area = first(:css, 'div.notes').value
+  fill_in(text_area, with: body)
 end

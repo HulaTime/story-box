@@ -21,12 +21,12 @@ feature 'Notes' do
 			expect(page).not_to have_content ' Important notes'
 		end
 
-		xcontext 'Data Binding' do
+		context 'Data Binding' do
 			scenario 'editing notes updates page and database' do
 				expect(page).to have_content 'Important notes'
-				edit_note(body: 'ploppers')
+				edit_note
 				expect(current_path).to eq notes_path
-				expect(page).to have_content 'ploppers'
+				expect(page).to have_content 'This is edited'
 			end
 		end
 	end
