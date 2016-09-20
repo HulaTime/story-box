@@ -1,23 +1,24 @@
 class NotesController < ApplicationController
 
 	def index
-		@notes = Note.all
+		redirect_to root_path if !user_signed_in?
+		@notes = current_user.notes.all unless !user_signed_in?
 		@note = Note.new
 	end
 
 	def create
-		Note.create(create_note_params)
+		current_user.notes.create(create_note_params)
 		redirect_to notes_path
 	end
 
 	def destroy
-		note = Note.find(params[:id])
+		note = current_user.notes.find(params[:id])
 		note.delete
 		redirect_to notes_path
 	end
 
 	def update
-		note = Note.find(edit_note_params[:id])
+		note = current_user.notes.find(edit_note_params[:id])
 		note.update(body: edit_note_params[:note])
 	end
 
@@ -32,7 +33,3 @@ class NotesController < ApplicationController
 	end
 
 end
-		# note_info = JSON.parse([params[:note]])
-		# p note_info
-		# new_note = Note.new(body: note_info)
-		# new_note.save

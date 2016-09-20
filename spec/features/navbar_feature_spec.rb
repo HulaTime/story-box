@@ -4,11 +4,6 @@ feature 'NavBar' do
 		visit root_path
 	end
 
-	scenario 'should have a Notes link' do
-		click_link 'Notes'
-		expect(current_path).to eq notes_path
-	end
-
 	scenario 'should have an About us link' do
 		click_link 'About us'
 		expect(current_path).to eq about_path
@@ -34,6 +29,11 @@ feature 'NavBar' do
 	context 'User signed in' do
 		before do
 			sign_user_up
+		end
+
+		scenario 'should have a Notes link' do
+			click_link 'Notes'
+			expect(current_path).to eq notes_path
 		end
 
     scenario 'should have a link to set Preferences' do

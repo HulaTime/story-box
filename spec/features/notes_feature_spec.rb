@@ -31,4 +31,11 @@ feature 'Notes' do
 		end
 	end
 
+	context 'when user not signed in' do
+		scenario 'user cannot view notes' do
+			visit notes_path
+			expect(current_path).to eq root_path
+		end
+	end
+
 end
