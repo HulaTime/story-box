@@ -9,4 +9,9 @@ class User < ApplicationRecord
   has_many :articles
   has_many :notes
 
+  def sort_notes_by_id
+ 		notes = self.notes
+ 		notes.sort_by{|note| note.id }
+  end
+
 end

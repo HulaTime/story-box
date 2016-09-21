@@ -2,7 +2,7 @@ class NotesController < ApplicationController
 
 	def index
 		redirect_to root_path if !user_signed_in?
-		@notes = current_user.notes.all unless !user_signed_in?
+		@sorted_notes = current_user.sort_notes_by_id unless !user_signed_in?
 		@note = Note.new
 	end
 

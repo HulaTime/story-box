@@ -7,7 +7,7 @@
 
 	<% note_num = 1 %>
 
-	<% @notes.each do |note| %>
+	<% @sorted_notes.each do |note| %>
 
 		<div contenteditable="true" id=<%="#{note.id}"%> class='notes'>
 			
