@@ -9,11 +9,12 @@
 
 	<% @sorted_notes.each do |note| %>
 
-		<div contenteditable="true" id=<%="#{note.id}"%> class='notes'>
-			
+		<div class='notes'>
 			<%= link_to image_tag('red-x.png'), note_path(note), class: 'delete-note', method: :delete %>
-			
-			<%= note.body %>
+
+			<div contenteditable="true" id=<%="#{note.id}"%> >				
+				<%= note.body %>
+			</div>
 
 		</div>
 

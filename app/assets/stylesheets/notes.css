@@ -22,8 +22,14 @@
   cursor: pointer;
 }
 
+.sticky-notes div.notes div {
+  height: 100%;
+  width: 100%;
+  outline: 0px solid transparent;
+}
+
 /*Font, background and border */
-.sticky-notes div, textarea {
+.sticky-notes div.notes, textarea {
   overflow:hidden;
   border:0;
   border-radius:3px;
@@ -38,7 +44,7 @@
 }
 
 /*Position and size */
-.sticky-notes div, textarea {
+.sticky-notes div.notes, textarea {
   display: block;
   padding: 1em;
   width:15%;
@@ -48,13 +54,13 @@
 }
 
 /* Random tilting and colour on notes*/
-.sticky-notes div, textarea {
+.sticky-notes div.notes, textarea {
   -webkit-transform:rotate(-6deg);
   -o-transform:rotate(-6deg);
   -moz-transform:rotate(-6deg);
 }
 
-.sticky-notes div:nth-child(even) {
+.sticky-notes div.notes:nth-child(even) {
   -o-transform:rotate(4deg);
   -webkit-transform:rotate(4deg);
   -moz-transform:rotate(4deg);
@@ -63,7 +69,7 @@
   background:#cfc;
 }
 
-.sticky-notes div:nth-child(3n) {
+.sticky-notes div.notes:nth-child(3n) {
   -o-transform:rotate(-3deg);
   -webkit-transform:rotate(-3deg);
   -moz-transform:rotate(-3deg);
@@ -72,7 +78,7 @@
   background:#ccf;
 }
 
-.sticky-notes div:nth-child(5n) {
+.sticky-notes div.notes:nth-child(5n) {
   -o-transform:rotate(5deg);
   -webkit-transform:rotate(5deg);
   -moz-transform:rotate(5deg);
@@ -81,7 +87,7 @@
 }
 
 /*Zoom on Focus*/
-.sticky-notes div:hover,div:focus, textarea:hover,textarea:focus {
+.sticky-notes div.notes:hover,div.notes:focus, textarea:hover,textarea:focus {
   -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
   -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
   box-shadow:10px 10px 7px rgba(0,0,0,.7);
@@ -92,7 +98,7 @@
   z-index:5;
 }
 
-.sticky-notes div, textarea {
+.sticky-notes div.notes, textarea {
   -moz-transition:-moz-transform .15s linear;
   -o-transition:-o-transform .15s linear;
   -webkit-transition:-webkit-transform .15s linear;
