@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
 
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Reenie+Beanie">
+    <link rel="stylesheet" type='text/css' href="https://fonts.googleapis.com/css?family=Poiret+One">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -15,7 +16,6 @@
     <div class='nav'>
       <ul>
         <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "About us", about_path %></li>
         <li><%= link_to "Articles", articles_path %></li>
         <% if user_signed_in? %></li>
           <li><%= link_to "Notes", notes_path %></li>
@@ -32,6 +32,9 @@
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
-    <%= yield %>
+    <ul class='body'>
+      <%= yield %>
+    </ul>
+
   </body>
 </html>

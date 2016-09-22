@@ -1,5 +1,4 @@
-Postgresql Installation instructions
----------
+### Postgresql Installation instructions
 Mac
 ------
 If you havn't already done so, make sure you have installed homebrew
@@ -43,7 +42,7 @@ Setting up Postgres on GNU/Linux systems requires a slightly different approach 
 On Ubuntu/Mint:
 
 ```
-sudo apt-get install postgresql postgresql-contrib postgresql-server-dev-9.3 libpq-dev
+sudo apt-get install postgresql postgresql-contrib postgresql-server-dev-9.5 libpq-dev
 ```
 On Fedora:
 ```

@@ -4,11 +4,6 @@ feature 'NavBar' do
 		visit root_path
 	end
 
-	scenario 'should have an About us link' do
-		click_link 'About us'
-		expect(current_path).to eq about_path
-	end
-
 	scenario 'should have a link to articles' do
 		click_link 'Articles'
 		expect(current_path).to eq articles_path
