@@ -15,6 +15,12 @@ feature 'NavBar' do
 			expect(page).to have_link 'Sign in'
 		end
 
+		scenario 'Notes, Preferences, and Sign out don\'t show' do
+			expect(page).not_to have_link 'Sign out'
+			expect(page).not_to have_link 'Notes'
+			expect(page).not_to have_link ' Preferences'
+		end
+ 
 		scenario 'home button redirects to landing page' do
 			click_link 'Home'
 			expect(current_path).to eq root_path

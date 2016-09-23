@@ -8,6 +8,7 @@ class User < ApplicationRecord
 
   has_many :articles
   has_many :notes
+  has_one :preference
 
   def sort_notes_by_id
  		notes = self.notes
