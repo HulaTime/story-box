@@ -3,7 +3,9 @@
 <div class=guardian>
 	<h3>Guardian</h3>
 	<p>
-		<%= @response %>
+		<% @body.each do |article| %>
+			<%= article['title'] %>
+		<% end %>
 	</p>
 </div>
 

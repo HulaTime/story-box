@@ -12,6 +12,6 @@ feature 'News' do
 
 	scenario 'outlets should display headlines', :vcr do
 		visit news_path
-		expect(page).to have_content 'GuardianHeadline FTHeadline BBCHeadline'
+		expect(page).to have_content 'adfafda'
 	end
 end

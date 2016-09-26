@@ -1,7 +1,9 @@
 class NewsController < ApplicationController
 
 	def index
-		@response = HTTParty.get("https://newsapi.org/v1/articles?source=bbc-sport&apiKey=#{ENV['NEWS_KEY']}").response
+		response_body = HTTParty.get("https://newsapi.org/v1/articles?source=bbc-sport&apiKey=#{ENV['NEWS_KEY']}").body
+		@body = JSON.parse(response_body)['articles']
+		p @body.first['title']
 	end
 
 end
