@@ -1,21 +1,8 @@
 <h1>Story Box</h1>
 
-<div class=guardian>
-	<h3>Guardian</h3>
-	<p>
-		<% @body.each do |article| %>
-			<%= article['title'] %>
-		<% end %>
-	</p>
-</div>
-
-<div class='ft'>
-	<h3>Financial Times</h3>
-</div>
-
-<div class='bbc-sport'>
-	<h3>BBC Sport</h3>
-</div>
+<% @sources.each do |source| %>
+	<h3> <%= source['name'] %> </h3>
+<% end %>
 
 <div>
 	<h3> Overview </h3>
