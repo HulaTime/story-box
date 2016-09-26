@@ -52,7 +52,7 @@ feature 'NavBar' do
 			expect(page).to have_content 'Bono'
 		end
 
-		scenario 'there is a link to news path' do
+		scenario 'there is a link to news path', :vcr do
 			click_link 'News'
 			expect(current_path).to eq news_path
 		end

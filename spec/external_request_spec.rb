@@ -1,4 +1,4 @@
-feature 'External request' do
+xfeature 'External request' do
   scenario 'makes a GitHub query to check webmock' do
     uri = URI('https://api.github.com/repos/thoughtbot/factory_girl/contributors')
 

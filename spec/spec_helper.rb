@@ -3,26 +3,21 @@ require 'webmock/rspec'
 require 'rspec/collection_matchers'
 require 'features/web_helpers'
 require 'factory_girl_rails'
+require 'vcr'
+require 'support/vcr'
 
 Coveralls.wear!
 
-WebMock.disable_net_connect!(allow_localhost: true)
-
 RSpec.configure do |config|
+
+  #config to add vcr tags for test blocks
+  config.around(:each, :vcr) do |example|
+    name = example.metadata[:full_description].split(/\s+/, 2).join("/").underscore.gsub(/[^\w\/]+/, "_")
+    VCR.use_cassette(name) {example.call}
+  end
 
   config.include FactoryGirl::Syntax::Methods
 
-  #stubs response from external requests in testing
-  config.before(:each) do
-    stub_request(:get, /api.github.com/).
-      with(headers: {'Accept'=>'*/*', 'User-Agent'=>'Ruby'}).
-      to_return(status: 200, body: "stubbed response", headers: {})
-  end
-
-    config.before(:each) do
-    stub_request(:get, "https://content.guardianapis.com/search?api-key=#{ENV['GUARDIAN_KEY']}").
-          to_return(:status => 200, :body => "latest news updates", :headers => {})
-  end
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
