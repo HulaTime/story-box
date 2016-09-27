@@ -16,7 +16,9 @@ feature 'Landing Page' do
 		end
 
 		scenario 'should render content from \'\news\index\'' do
-			expect(page).to have_content 'Guardian Financial Times BBC Sport'
+			expect(page).to have_content 'Guardian'
+			expect(page).to have_content 'Financial Times'
+			expect(page).to have_content 'BBC Sport'
 		end
 	end
 

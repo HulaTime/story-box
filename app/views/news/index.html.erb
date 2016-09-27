@@ -1,1 +1,3 @@
-<%= @articles.first %>
+<% @news_sources.each do |s| %>
+	<h3> <%= s['name'] %> </h3>
+<% end %>
