@@ -1,20 +1,18 @@
 require 'coveralls'
-require 'webmock/rspec'
+# require 'webmock/rspec'
 require 'rspec/collection_matchers'
 require 'features/web_helpers'
 require 'factory_girl_rails'
-require 'vcr'
-require 'support/vcr'
 
 Coveralls.wear!
 
 RSpec.configure do |config|
 
   #config to add vcr tags for test blocks
-  config.around(:each, :vcr) do |example|
-    name = example.metadata[:full_description].split(/\s+/, 2).join("/").underscore.gsub(/[^\w\/]+/, "_")
-    VCR.use_cassette(name) {example.call}
-  end
+  # config.around(:each, :vcr) do |example|
+  #   name = example.metadata[:full_description].split(/\s+/, 2).join("/").underscore.gsub(/[^\w\/]+/, "_")
+  #   VCR.use_cassette(name) {example.call}
+  # end
 
   config.include FactoryGirl::Syntax::Methods
 

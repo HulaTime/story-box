@@ -55,8 +55,6 @@ group :test do
   gem 'capybara'
   gem 'coveralls', require: false
   gem 'shoulda-matchers'
-  gem 'webmock'
-  gem 'vcr'
   gem 'factory_girl_rails'
 end
 
