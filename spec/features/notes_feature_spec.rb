@@ -1,4 +1,4 @@
-feature 'Notes' do
+feature 'Notes', :vcr do
 	
 	context 'when user signed in' do
 		before do

@@ -1,4 +1,4 @@
-feature 'Preferences' do
+feature 'Preferences', :vcr do
 	
 	context 'signed in' do
 		before do

@@ -1,4 +1,4 @@
-feature 'Landing Page' do
+feature 'Landing Page', :vcr do
 	
 	context 'signed in' do
 		before do

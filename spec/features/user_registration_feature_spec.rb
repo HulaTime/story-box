@@ -1,4 +1,4 @@
-feature "User can sign in and out" do
+feature "User can sign in and out", :vcr do
   context "user not signed in and on the homepage" do
     scenario "should see a 'sign in' link and a 'sign up' link" do
       visit('/')

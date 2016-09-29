@@ -1,4 +1,4 @@
-feature 'Articles' do
+feature 'Articles', :vcr do
 
 	context 'when user signed in' do
 		before do
