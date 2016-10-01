@@ -1,0 +1,28 @@
+// Place all the styles related to the news controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#news {
+	height:100%;
+	margin: 10px;
+	list-style: none;
+}
+
+#news li {
+	position: relative;
+	display: block;
+	float: left;
+	width: 33%;
+	height: 100px;
+	text-align: center;
+}
+
+.news-source-names {
+	font-weight: bold;
+	font-size: 2em;
+}
