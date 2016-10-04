@@ -10,10 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160923093828) do
+ActiveRecord::Schema.define(version: 20161004172645) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "apis", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -22,6 +27,11 @@ ActiveRecord::Schema.define(version: 20160923093828) do
     t.datetime "updated_at", null: false
     t.integer  "user_id"
     t.index ["user_id"], name: "index_articles_on_user_id", using: :btree
+  end
+
+  create_table "news_apis", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "notes", force: :cascade do |t|
@@ -39,6 +49,17 @@ ActiveRecord::Schema.define(version: 20160923093828) do
     t.string   "name"
     t.string   "value"
     t.index ["user_id"], name: "index_preferences_on_user_id", using: :btree
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.integer  "rating"
+    t.text     "comments"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.integer  "article_id"
+    t.index ["article_id"], name: "index_reviews_on_article_id", using: :btree
+    t.index ["user_id"], name: "index_reviews_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
@@ -63,4 +84,6 @@ ActiveRecord::Schema.define(version: 20160923093828) do
   add_foreign_key "articles", "users"
   add_foreign_key "notes", "users"
   add_foreign_key "preferences", "users"
+  add_foreign_key "reviews", "articles"
+  add_foreign_key "reviews", "users"
 end

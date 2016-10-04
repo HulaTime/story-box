@@ -5,7 +5,13 @@
 //     url: "https://localhost:3000/news/headlines",
 //   })
 // }
-
-setInterval(function() {
-	console.log("poo");
-}, (2000));
+$(document).ready(function(){
+	$.ajax({
+		url: "http://localhost:3000/api/v1/newsapi",
+	  type: "GET",
+	  
+	  success: function(){
+	    console.log("poop")
+	   }
+	});
+});

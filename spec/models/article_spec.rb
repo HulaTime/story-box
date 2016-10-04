@@ -10,6 +10,7 @@ describe Article, type: :model do
     expect(article).not_to be_valid
   end
 
-  it { should belong_to(:user) }
+  it { should belong_to :user }
+  it { should have_many :reviews }
 
 end

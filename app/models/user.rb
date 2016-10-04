@@ -9,6 +9,7 @@ class User < ApplicationRecord
   has_many :articles
   has_many :notes
   has_one :preference
+  has_many :reviews
 
   def sort_notes_by_id
  		notes = self.notes

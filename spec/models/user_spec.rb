@@ -8,6 +8,7 @@ describe User, type: :model do
 	it { should have_many :articles }
 	it { should have_many :notes }
 	it { should have_one :preference }
+	it { should have_many :reviews }
 
 	it 'should have a method to sort notes' do
 		allow(user).to receive(:notes) { [note1, note3, note2] }
