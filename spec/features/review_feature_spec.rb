@@ -10,7 +10,7 @@ feature 'Reviews', :vcr do
   
   scenario 'allows users to leave article reviews/comments' do
     fill_in "review-box", with: "so so"
-    select '3', from: 'review-rating'
+    select '3', from: 'review-ratin'
     click_button 'Submit'
 		expect(current_path).to eq articles_path
     expect(page).to have_content('so so')
