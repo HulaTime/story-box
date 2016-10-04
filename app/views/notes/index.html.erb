@@ -1,7 +1,7 @@
 <div class='sticky-notes'>
 	
 	<%= form_for @note, url: {action: "create"} do |f| %>
-		<%= f.text_area :body, class: 'sticky-notes' %>
+		<%= f.text_area :body, class: 'notes-box' %>
 		<%= f.submit html: {id:'new-note'} %>
 	<% end %>
 

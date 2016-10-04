@@ -4,16 +4,13 @@ feature 'Reviews', :vcr do
 		make_article
 	end
 	
-	xscenario 'can be left by a user on someone else\'s article' do
-		
-	end
-  
   scenario 'allows users to leave article reviews/comments' do
-    fill_in "review-box", with: "so so"
-    select '3', from: 'review-ratin'
+    fill_in "comments", with: "so so"
+    select '3', from: 'rating'
     click_button 'Submit'
 		expect(current_path).to eq articles_path
     expect(page).to have_content('so so')
+    expect(page).to have_content('3')
   end
 
 end

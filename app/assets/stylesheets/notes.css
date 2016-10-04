@@ -29,7 +29,7 @@
 }
 
 /*Font, background and border */
-.sticky-notes div.notes, textarea {
+.sticky-notes div.notes, .notes-box {
   overflow:hidden;
   border:0;
   border-radius:3px;
@@ -44,7 +44,7 @@
 }
 
 /*Position and size */
-.sticky-notes div.notes, textarea {
+.sticky-notes div.notes, .notes-box {
   display: block;
   padding: 1em;
   width:15%;
@@ -54,7 +54,7 @@
 }
 
 /* Random tilting and colour on notes*/
-.sticky-notes div.notes, textarea {
+.sticky-notes div.notes, .notes-box {
   -webkit-transform:rotate(-6deg);
   -o-transform:rotate(-6deg);
   -moz-transform:rotate(-6deg);
@@ -87,7 +87,7 @@
 }
 
 /*Zoom on Focus*/
-.sticky-notes div.notes:hover,div.notes:focus, textarea:hover,textarea:focus {
+.sticky-notes div.notes:hover,div.notes:focus, .notes-box:hover,.notes-box:focus {
   -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
   -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
   box-shadow:10px 10px 7px rgba(0,0,0,.7);
@@ -98,7 +98,7 @@
   z-index:5;
 }
 
-.sticky-notes div.notes, textarea {
+.sticky-notes div.notes, .notes-box {
   -moz-transition:-moz-transform .15s linear;
   -o-transition:-o-transform .15s linear;
   -webkit-transition:-webkit-transform .15s linear;

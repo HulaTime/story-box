@@ -4,18 +4,35 @@
 	<p> <%= article_lines %> </p>
 	<p>
 		<span>Reviews</span>
-			<form>
-				<textarea name='review-box'></textarea>
-				<select name="review-rating">
+			
+			<form action="/reviews" method="post">
+				
+				<textarea name='comments'></textarea>
+				
+				<select name="rating">
 					<% x=1 %>
 					<% 10.times do %>
 						<option value=<%= x %>><%= x %></option>
 						<% x+=1 %>
 					<% end %>
 				</select>
+
+				<input type="hidden" name="article_id" value=<%=article.id%>>
+
 				<input type="submit" value="Submit">
+			
 			</form>
 	</p>
+	
+	<p>
+		<% @reviews.each do |review| %>
+			<% if review.article_id == article.id %>
+				<%= review.rating %>
+				<%= review.comments %>
+			<% end %>
+		<% end %>
+	</p>
+
 <% end %>
 
 <% if user_signed_in? %>

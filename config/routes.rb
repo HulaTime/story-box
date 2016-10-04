@@ -10,5 +10,6 @@ Rails.application.routes.draw do
 	
 	resources :articles 
 	resources :notes
+	resources :reviews
 
 end

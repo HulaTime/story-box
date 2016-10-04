@@ -2,6 +2,7 @@ class ArticlesController < ApplicationController
 
 	def index
 		@articles = Article.all
+		@reviews = Review.all
 	end
 
 	def new
