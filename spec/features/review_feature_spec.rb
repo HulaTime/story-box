@@ -8,6 +8,7 @@ feature 'Reviews', :vcr do
       end
       
       scenario 'able to leave article reviews/comments' do
+        expect(page).to have_css '#review_form'
         fill_in "review", with: "so so"
         select '3', from: 'rating'
         click_button 'Submit'
@@ -25,7 +26,7 @@ feature 'Reviews', :vcr do
       end
 
       scenario 'not able to leave a review' do
-        expect(page).not_to have_field 'review'        
+        expect(page).not_to have_css '#review_form'       
       end
     end
   end

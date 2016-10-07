@@ -3,24 +3,25 @@
 	<p> <%=link_to article.title, article_path(article) %> </p>	
 	<p> <%= article.first_three_lines %> </p>
 	
-	<p>
-		<span>Leave a review</span>
-			
-			<form action="/reviews" method="post">				
-				<textarea name='review'></textarea>				
-				
-				<select name="rating">
-					<% x=1 %>
-					<% 10.times do %>
-						<option value=<%= x %>><%= x %></option>
-						<% x+=1 %>
-					<% end %>
-				</select>
-				
-				<input type="hidden" name="article_id" value=<%=article.id%>>
-				<input type="submit" value="Submit">
-			</form>
-	</p>
+	<% if user_signed_in? %>
+		<p id="review_form">
+			<span>Leave a review</span>
+				<form action="/reviews" method="post">				
+					<textarea name='review'></textarea>				
+					
+					<select name="rating">
+						<% x=1 %>
+						<% 10.times do %>
+							<option value=<%= x %>><%= x %></option>
+							<% x+=1 %>
+						<% end %>
+					</select>
+					
+					<input type="hidden" name="article_id" value=<%=article.id%>>
+					<input type="submit" value="Submit">
+				</form>
+			</p>
+		<% end %>
 	
 	<p>
 		<% @reviews.each do |review| %>
