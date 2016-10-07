@@ -15,7 +15,7 @@ feature 'NavBar', :vcr do
 			expect(page).to have_link 'Sign in'
 		end
 
-		scenario 'Notes, Preferences, and Sign out don\'t show' do
+		scenario 'Notes and Sign out don\'t show' do
 			expect(page).not_to have_link 'Sign out'
 			expect(page).not_to have_link 'Notes'
 			expect(page).not_to have_link ' Preferences'
@@ -36,11 +36,6 @@ feature 'NavBar', :vcr do
 			click_link 'Notes'
 			expect(current_path).to eq notes_path
 		end
-
-    scenario 'should have a link to set Preferences' do
-      click_link 'Preferences'
-      expect(current_path).to eq(preferences_path)
-    end
 
 		scenario 'should have a link to sign out' do
 			expect(page).to have_link 'Sign out'

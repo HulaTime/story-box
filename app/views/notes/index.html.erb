@@ -6,19 +6,17 @@
 	<% end %>
 
 	<% note_num = 1 %>
-
 	<% @sorted_notes.each do |note| %>
-
+		
 		<div class='notes'>
 			<%= link_to image_tag('red-x.png'), note_path(note), class: 'delete-note', method: :delete %>
 
 			<div contenteditable="true" id=<%="#{note.id}"%> >				
 				<%= note.body %>
 			</div>
-
 		</div>
-
+		
 		<% note_num += 1 %>
-
 	<% end %>
+
 </div>

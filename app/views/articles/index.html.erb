@@ -1,13 +1,13 @@
-<% @articles.each do |article| %>
-	<% article_lines = article.body.split("\n")[0..2].join("\n") %>
-	<p> <%=link_to article.title, article_path(article) %> </p>
-	<p> <%= article_lines %> </p>
+<% @articles.each do |article| %>	
+		
+	<p> <%=link_to article.title, article_path(article) %> </p>	
+	<p> <%= article.first_three_lines %> </p>
+	
 	<p>
-		<span>Reviews</span>
+		<span>Leave a review</span>
 			
-			<form action="/reviews" method="post">
-				
-				<textarea name='comments'></textarea>
+			<form action="/reviews" method="post">				
+				<textarea name='review'></textarea>				
 				
 				<select name="rating">
 					<% x=1 %>
@@ -16,11 +16,9 @@
 						<% x+=1 %>
 					<% end %>
 				</select>
-
+				
 				<input type="hidden" name="article_id" value=<%=article.id%>>
-
 				<input type="submit" value="Submit">
-			
 			</form>
 	</p>
 	
@@ -28,7 +26,7 @@
 		<% @reviews.each do |review| %>
 			<% if review.article_id == article.id %>
 				<%= review.rating %>
-				<%= review.comments %>
+				<%= review.review %>
 			<% end %>
 		<% end %>
 	</p>
