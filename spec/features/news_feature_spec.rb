@@ -11,8 +11,12 @@ feature 'News', :vcr do
 		expect(page).to have_content 'BBC Sport'
 	end
 
-	scenario 'each source should display latest headlines' do
+	xscenario 'each source should display latest headlines' do
 		expect(page).to have_content ''
+	end
+
+	xscenario "need to iterate through li in element to find images 'each source should have a picture'" do
+		news_sources = page.all(:css, '.news_title')
 	end
 
 end

@@ -8,6 +8,7 @@ body {
 }
 
 #news {
+	padding-top: 10%;
 	height:100%;
 	margin: 10px;
 	list-style: none;
@@ -18,11 +19,14 @@ body {
 	display: block;
 	float: left;
 	width: 33%;
-	height: 100px;
 	text-align: center;
 }
 
-.news-source-names {
+.news-logo {
+	position: relative;
+}
+
+.news-title {
 	font-weight: bold;
 	font-size: 2em;
 }
