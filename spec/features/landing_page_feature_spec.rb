@@ -10,7 +10,7 @@ feature 'Landing Page', :vcr do
 		end
 	end
 
-	context 'signed out' do
+	context 'Signed out' do
 		before do
 			visit root_path
 		end
