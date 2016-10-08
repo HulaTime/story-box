@@ -18,7 +18,8 @@ body {
 	position: relative;
 	display: block;
 	float: left;
-	width: 33%;
+	width: 25%;
+	height: 400px;
 	text-align: center;
 }
 

@@ -11,6 +11,12 @@ feature 'News', :vcr do
 		expect(page).to have_content 'BBC Sport'
 	end
 
+	scenario 'each source title is a link to the source' do
+		click_link 'ABC News (AUS)'
+		url = URI.parse(current_url).to_s 
+		expect(url).to eq "http://www.abc.net.au/news"
+	end
+
 	xscenario 'each source should display latest headlines' do
 		expect(page).to have_content ''
 	end
