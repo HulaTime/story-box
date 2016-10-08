@@ -15,7 +15,7 @@ feature 'Landing Page', :vcr do
 			visit root_path
 		end
 
-		scenario 'should render content from \'\news\index\'' do
+		xscenario 'should render content from \'\news\index\'' do
 			expect(page).to have_content 'Guardian'
 			expect(page).to have_content 'Financial Times'
 			expect(page).to have_content 'BBC Sport'
