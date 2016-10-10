@@ -1,15 +1,19 @@
-<ul id='news'>
+<table id='news'>
 	
-	<% @news_sources.each do |s| %>
+	<% @news_sources.each_slice(5) do |slice| %>
 		
-		<li>
-			<div class="news-logo">
-				<a href=<%=s["url"]%> >
- 					<img src=<%=s['urlsToLogos']['small']%> alt="<%=s['name']%>" >
- 				</a>
-			</div>
-		</li>
+		<tr>
+			<% slice.each do |source| %>
+				
+				<td>
+					<a href=<%=source["url"]%> >
+ 						<img src=<%=source['urlsToLogos']['small']%> alt="<%=source['name']%>" >
+ 					</a>
+				</td>
+
+			<% end %>
+		</tr>
 
 	<% end %>
 
-</ul>
+</table>
