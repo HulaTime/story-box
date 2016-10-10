@@ -5,13 +5,13 @@ feature 'News', :vcr do
 		visit news_path
 	end
 
-	scenario 'should have a list of media sources' do
+	xscenario 'should have a list of media sources' do
 		expect(page).to have_content 'Guardian'
 		expect(page).to have_content 'Financial Times'
 		expect(page).to have_content 'BBC Sport'
 	end
 
-	scenario 'each source title is a link to the source' do
+	scenario 'each source logo is a link to the source' do
 		click_link 'ABC News (AUS)'
 		url = URI.parse(current_url).to_s 
 		expect(url).to eq "http://www.abc.net.au/news"
