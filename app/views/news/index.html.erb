@@ -3,12 +3,14 @@
 	<% @news_sources.each_slice(5) do |slice| %>
 		
 		<tr>
-			<% slice.each do |source| %>
-				
-				<td>
-					<a href=<%=source["url"]%> >
- 						<img src=<%=source['urlsToLogos']['small']%> alt="<%=source['name']%>" >
+			<% slice.each do |s| %>
+
+				<td class='source-info'>
+					<a href=<%=s["url"]%> >
+ 						<img src=<%=s['urlsToLogos']['small']%> alt="<%=s['name']%>" >
  					</a>
+ 					<p>
+ 					</p>
 				</td>
 
 			<% end %>
@@ -17,3 +19,4 @@
 	<% end %>
 
 </table>
+

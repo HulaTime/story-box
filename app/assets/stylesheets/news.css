@@ -8,13 +8,12 @@ body {
 }
 
 table {
-	border: 1px solid blue;
+	border-collapse: collapse;
 	width: 100%;
-	padding-top: 20px;
+	margin-top: 20px;
 }
 
 table tr {
-	border: 1px solid green;
 }
 
 table tr td {
@@ -22,34 +21,3 @@ table tr td {
 	border: 1px solid red;
 	height: 200px;
 }
-
-/*#news {
-	padding-top: 5%;
-	height:100%;
-	margin: 10px;
-	list-style: none;
-}
-
-#news li {
-	position: relative;
-	display: block;
-	float: left;
-	width: 19%;
-	height:200px;
-	border: solid 1px;
-	white-space: nowrap;
-  text-align: center;
-  padding: 80px;
-}
-
-.news-logo {
-	display: block;
-	height: 100%;
-}
-
-.news-logo img {
-	max-height: 200px;
-	max-width: 100%
-}*/
-
-
