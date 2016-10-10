@@ -21,8 +21,11 @@ feature 'News', :vcr do
 		expect(page).to have_content ''
 	end
 
-	xscenario "need to iterate through li in element to find images 'each source should have a picture'" do
-		news_sources = page.all(:css, '.news_title')
+	scenario "each source should have its logo as an image" do
+		news_sources = page.all(:css, '.news-logo')
+		news_sources.each do |source|
+			expect(source).to have_css('img')
+		end
 	end
 
 end
