@@ -18,15 +18,17 @@ feature 'News', :vcr do
 	end
 
 	scenario 'each source should have a description' do
-		news_sources = page.all(:css, '.news-logo')
-		expect(page).to have_content ''
-	end
-
-	xscenario "each source should have its logo as an image" do
 		news_sources = page.all(:css, '.source-info')
 		news_sources.each do |source|
-			url = source.find('a')['href']
-			expect(source).to have_xpath("//img[@src=\"/public/images/#{image}\"]")
+			paragraph = source.find(:css, 'p')
+			expect(paragraph.text).not_to eq ''
+		end
+	end
+
+	scenario "each source should have its logo as an image" do
+		news_sources = page.all(:css, '.source-info')
+		news_sources.each do |source|
+			expect(source).to have_css("img")
 		end
 	end
 
