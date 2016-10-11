@@ -6,8 +6,9 @@
 	<% if user_signed_in? %>
 		<p id="review_form">
 			<span>Leave a review</span>
-				<form action="/reviews" method="post">				
-					<textarea name='review'></textarea>				
+ 				
+ 				<%= form_for @new_review, url: reviews_path do |f| %>
+					<textarea name='review'></textarea>					
 					
 					<select name="rating">
 						<% x=1 %>
@@ -19,7 +20,8 @@
 					
 					<input type="hidden" name="article_id" value=<%=article.id%>>
 					<input type="submit" value="Submit">
-				</form>
+				<% end %>
+
 			</p>
 		<% end %>
 	
