@@ -20,6 +20,11 @@ body {
   background: white;
 }
 
+#save-button {
+  display: none;
+  visibility: hidden;
+}
+
 /*Navbar*/
 
 @media screen and (min-width: 600px) {

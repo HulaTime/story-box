@@ -1,11 +1,8 @@
 <%= tinymce_assets %>
 
 <%= form_for @article do |f| %>
-  <%= f.label 'Save as:' %>
-  <%= f.text_field :title %>
-  <%= f.label 'Article:' %>
   <%= f.text_area :body, class: "tinymce" %>
-  <%= f.submit 'Save' %>
+  <%= f.submit 'Save', id: 'save-button' %>
 <% end %> 
 
 <%= tinymce %>

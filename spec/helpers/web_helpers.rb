@@ -14,12 +14,11 @@ def make_note(body: 'Important notes')
   click_button 'Create Note'
 end
 
-def make_article(title: 'An Article', body: "Some useful info\n\nend")
+def make_article(body: "Some useful info\n\nend")
   visit '/articles'
   click_link 'New Article'
-  fill_in('article_title', with: title)
   fill_in('article_body', with: body)
-  click_button 'Save'
+  click_button 'save-button'
 end
 
 def edit_note(body: 'This is edited')
