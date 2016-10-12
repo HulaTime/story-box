@@ -32,4 +32,7 @@ feature 'News', :vcr do
 		end
 	end
 
+	xscenario 'add iframes for the news sources' do
+	end
+
 end
