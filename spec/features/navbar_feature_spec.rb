@@ -23,7 +23,7 @@ feature 'NavBar', :vcr do
  
 		scenario 'home button redirects to landing page' do
 			click_link 'Home'
-			expect(current_path).to eq root_path
+			expect(current_path).to eq articles_path
 		end
 	end
 

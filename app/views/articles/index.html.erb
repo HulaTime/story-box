@@ -1,6 +1,6 @@
 <% @articles.each do |article| %>	
 		
-	<p> <%=link_to article.title, article_path(article) %> </p>	
+	<p> <%=link_to 'Read Full Article', article_path(article) %> </p>	
 	<p> <%= article.first_three_lines %> </p>
 	
 	<% if user_signed_in? %>

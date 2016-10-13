@@ -16,12 +16,12 @@ feature 'Articles', :vcr do
 			expect(page).to have_content 'No. 2'
 		end
 
-		xscenario 'can be viewed individually' do
+		scenario 'can be viewed individually' do
 			user = User.find_by(email: 'test@example.com')
 			article = user.articles.first
-			click_link 'An Article'
+			click_link 'Read Full Article'
 			expect(current_path).to eq "/articles/#{article.id}"
-			expect(page).to have_content "An Article Some useful info\n\n\n\nend"
+			expect(page).to have_content "Some useful info\n\n\n\nend"
 		end
 	end
 
