@@ -4,7 +4,7 @@ class LandingPageController < ApplicationController
 		if user_signed_in?
 			redirect_to home_path 
 		else
-			redirect_to articles_path
+			redirect_to news_path
 		end
 	end
 

@@ -18,12 +18,12 @@ feature 'NavBar', :vcr do
 		scenario 'Notes and Sign out don\'t show' do
 			expect(page).not_to have_link 'Sign out'
 			expect(page).not_to have_link 'Notes'
-			expect(page).not_to have_link ' Preferences'
+			expect(page).not_to have_link 'Preferences'
 		end
  
 		scenario 'home button redirects to landing page' do
 			click_link 'Home'
-			expect(current_path).to eq articles_path
+			expect(current_path).to eq news_path
 		end
 	end
 
