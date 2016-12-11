@@ -1,5 +1,5 @@
 [![Stories in Ready](https://badge.waffle.io/MaxProvin/story-box.png?label=ready&title=Ready)](https://waffle.io/MaxProvin/story-box)
-<!-- [![Build Status](https://travis-ci.org/MaxProvin/story-box.svg?branch=master)](https://travis-ci.org/MaxProvin/story-box) -->
+[![Build Status](https://travis-ci.org/MaxProvin/story-box.svg?branch=master)](https://travis-ci.org/MaxProvin/story-box)
 [![Coverage Status](https://coveralls.io/repos/github/MaxProvin/story-box/badge.svg?branch=master)](https://coveralls.io/github/MaxProvin/story-box?branch=master)
 
 
