@@ -33,7 +33,7 @@ feature 'News', :vcr do
 	end
 
 	scenario 'Clicking a news link opens it\'s source in iframe' do
-		iframes = page.all(:css, 'iframe')
+		p iframes = page.all(:css, 'iframe')
 		expect(iframes.first).not_to eq nil
 	end
 
