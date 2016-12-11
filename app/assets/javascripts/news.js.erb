@@ -1,17 +1,9 @@
+var idCount = 1;
 
-// function getRequest(newsSource) {
-// 	$.ajax({
-//     type: "GET",
-//     url: "https://localhost:3000/news/headlines",
-//   })
-// }
-$(document).ready(function(){
-	$.ajax({
-		url: "http://localhost:3000/api/v1/newsapi",
-	  type: "GET",
-	  
-	  success: function(){
-	    console.log("poop")
-	   }
-	});
-});
+function setIframe(element, location) {
+    var theIframe = document.createElement("iframe");
+    theIframe.id = "iframe-" + idCount
+    idCount ++
+    theIframe.src = location;
+   element.appendChild(theIframe);
+}

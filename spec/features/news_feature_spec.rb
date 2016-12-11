@@ -11,10 +11,11 @@ feature 'News', :vcr do
 		expect(page).to have_css("img[alt*='BBC Sport']")
 	end
 
-	scenario 'each source logo is a link to the source' do
-		click_link 'ABC News (AUS)'
-		url = URI.parse(current_url).to_s 
-		expect(url).to eq "http://www.abc.net.au/news"
+	xscenario 'Clicking a news link opens it\'s source in iframe' do
+		expect(page.all(:css, 'iframe')).to be_empty
+		images = page.all(:css, '.news-images')
+		images.first.click
+		find("#iframe-1")
 	end
 
 	scenario 'each source should have a description' do
@@ -31,10 +32,4 @@ feature 'News', :vcr do
 			expect(source).to have_css("img")
 		end
 	end
-
-	scenario 'Clicking a news link opens it\'s source in iframe' do
-		p iframes = page.all(:css, 'iframe')
-		expect(iframes.first).not_to eq nil
-	end
-
 end

@@ -1,8 +1,4 @@
 <table id='news'>
-
-<iframe src="http://www.w3schools.com">
-  <p>Your browser does not support iframes.</p>
-</iframe>
 	
 	<% @news_sources.each_slice(5) do |slice| %>
 		
@@ -10,9 +6,9 @@
 			<% slice.each do |s| %>
 
 				<td class='source-info'>
-					<a href=<%=s["url"]%> >
+					<span class='news-images' onclick="setIframe(this, '<%=s['url']%>')">
  						<img src=<%=s['urlsToLogos']['small']%> alt="<%=s['name']%>" >
- 					</a>
+ 					</span>
  					<p>
  						<%= s['description'] %>
  					</p>
@@ -24,4 +20,3 @@
 	<% end %>
 
 </table>
-
