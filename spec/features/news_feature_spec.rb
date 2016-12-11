@@ -11,12 +11,12 @@ feature 'News', :vcr do
 		expect(page).to have_css("img[alt*='BBC Sport']")
 	end
 
-	xscenario 'Clicking a news link opens it\'s source in iframe' do
-		expect(page.all(:css, 'iframe')).to be_empty
-		images = page.all(:css, '.news-images')
-		images.first.click
-		find("#iframe-1")
-	end
+	# xscenario 'Clicking a news link opens it\'s source in iframe' do
+	# 	expect(page.all(:css, 'iframe')).to be_empty
+	# 	images = page.all(:css, '.news-images')
+	# 	images.first.click
+	# 	find("#iframe-1")
+	# end
 
 	scenario 'each source should have a description' do
 		news_sources = page.all(:css, '.source-info')
